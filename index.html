@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOA Utility</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div class="col-sm-12">
+<h1>API Tester</h1>
+</div><!--/.col-sm-12-->
+<div class="col-sm-6">
+    <div class="col-sm-12">
+        <div class="clearfix"></div>
+            <div class="form-group">
+                <label>API URL: </label>
+                <input type="text" class="form-control" id="theURL" name="" value="/api/"
+                onkeypress="">
+            </div><!-- /.form-group  -->
+
+            <div class="clearfix"></div>
+                <div id="buttonDiv" class="padding-bottom-20px pull-right">
+                    <button class="btn btn-primary" id="GETService">GET</button>
+                    <button class="btn btn-primary" id="POSTService">POST</button>
+                    <button class="btn btn-primary" id="PUTService">PUT</button>
+                    <button class="btn btn-primary" id="DELETEService">DELETE</button>
+                </div><!--/#buttonDiv-->
+
+            <div class="clearfix"></div>
+
+            <div class="form-group box">
+                <input type="text" class="form-control" id="contentType" name="" value="application/json">
+                <textarea id="jsonObject" class="form-control"></textarea>
+            </div><!-- /.form-group  -->
+
+    </div><!--/.col-sm-12-->
+</div><!--/.col-sm-6-->
+
+<div class="col-sm-6" id="resultsDiv">
+    <div class="form-group">
+        <label>Results: </label>
+        <pre id="results"></pre>
+
+    </div><!-- /.form-group -->
+</div><!--/#resultsDiv .col-sm-6-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.3.9/alasql.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scripts/main.js"></script>
+
+
+
+</body>
+</html>
